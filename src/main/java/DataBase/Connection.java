@@ -31,7 +31,7 @@ public class Connection {
         connectionData.setUrl(URL);
         connectionData.setUsername(USER);
         connectionData.setPassword(PSSWD);
-        connectionData.setInitialSize(10);
+        connectionData.setInitialSize(5);
         return connectionData;
 
     }
