@@ -4,16 +4,17 @@ import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
 
-@XmlRootElement(name="entity")
-@XmlType(propOrder= {"id","name","code","web","email"})
-public class Entity {
+@XmlRootElement(name="institution")
+@XmlType(propOrder= {"id","name","category","code","web","email"})
+public class Institution {
     private Integer id;
     private String name;
+    private Integer category;
     private String code;
     private String web;
     private String email;
 
-    public Entity() {
+    public Institution() {
     }
 
     @XmlElement(name="id")
@@ -32,6 +33,15 @@ public class Entity {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @XmlElement(name="category")
+    public Integer getCategory() {
+        return category;
+    }
+
+    public void setCategory(Integer category) {
+        this.category = category;
     }
 
     @XmlElement(name="code")

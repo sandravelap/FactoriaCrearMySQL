@@ -1,0 +1,101 @@
+ACTIVIDADES FÍSICAS Y DEPORTIVAS	LOGSE	AFD201	Conducción de Actividades Físico-Deportivas en el Medio Natural
+ADMINISTRACIÓN Y GESTIÓN	LOE	ADG201	Gestión Administrativa
+AGRARIA	LOE	AGA201	Producción Agropecuaria
+AGRARIA	LOE	AGA204	Jardinería y floristería
+AGRARIA	LOE	AGA205	Aprovechamiento y Conservación del Medio Natural
+ARTES GRÁFICAS	LOGSE	ARG202	Impresión en Artes Gráficas
+ARTES GRÁFICAS	LOE	ARG203	Preimpresión digital
+COMERCIO Y MARKETING	LOGSE	COM201	Comercio
+EDIFICACIÓN Y OBRA CIVIL	LOE	EOC201	Obras de interior, decoración y rehabilitación
+EDIFICACIÓN Y OBRA CIVIL	LOE	EOC203	Construcción
+EDIFICACIÓN Y OBRA CIVIL	LOGSE	EOC204	Operación y Mantenimiento de Maquinaria de Construcción
+ELECTRICIDAD Y ELECTRÓNICA	LOGSE	ELE201	Equipos Electrónicos de consumo
+ELECTRICIDAD Y ELECTRÓNICA	LOE	ELE202	Instalaciones Eléctricas y Automáticas
+ELECTRICIDAD Y ELECTRÓNICA	LOE	ELE203	Instalaciones de Telecomunicaciones
+FABRICACIÓN MECÁNICA	LOE	FME202	Mecanizado
+FABRICACIÓN MECÁNICA	LOE	FME203	Soldadura y Calderería
+HOSTELERÍA Y TURISMO	LOE	HOT201	Cocina y Gastronomía
+HOSTELERÍA Y TURISMO	LOE	HOT203	Servicios en restauración
+IMAGEN PERSONAL	LOGSE	IMP202	Estética Personal Decorativa
+IMAGEN PERSONAL	LOE	IMP203	Peluquería y cosmética capilar
+IMAGEN Y SONIDO	LOGSE	CIS201	Laboratorio de imagen
+INDUSTRIAS ALIMENTARIAS	LOE	INA201	Elaboración de Productos Alimenticios
+INDUSTRIAS ALIMENTARIAS	LOE	INA204	Aceites de oliva y vino
+INDUSTRIAS ALIMENTARIAS	LOE	INA207	Panadería, repostería y confitería
+INFORMÁTICA Y COMUNICACIONES	LOE	IFC201	Sistemas Microinformáticos y Redes
+INSTALACIÓN Y MANTENIMIENTO	LOE	IMA201	Mantenimiento Electromecánico
+INSTALACIÓN Y MANTENIMIENTO	LOE	IMA202	Instalaciones Frigoríficas y de Climatización
+INSTALACIÓN Y MANTENIMIENTO	LOE	IMA203	Instalaciones de Producción de Calor
+MADERA, MUEBLE Y CORCHO	LOE	MAM201	Instalación y amueblamiento
+QUÍMICA	LOGSE	QUI201	Laboratorio
+QUÍMICA	LOE	QUI204	Planta Química
+SANIDAD	LOGSE	SAN201	Cuidados Auxiliares de Enfermería
+SANIDAD	LOE	SAN202	Farmacia y Parafarmacia
+SANIDAD	LOE	SAN203	Emergencias Sanitarias
+SERVICIOS SOCIOCULTURALES Y A LA COMUNIDAD	LOE	SSC201	Atención a personas en situación de dependencia
+TEXTIL, CONFECCIÓN Y PIEL	LOE	TCP202	Confección y Moda
+TRANSPORTE Y MANTENIMIENTO DE VEHÍCULOS	LOE	TMV201	Carrocería
+TRANSPORTE Y MANTENIMIENTO DE VEHÍCULOS	LOE	TMV202	Electromecánica de Vehículos Automóviles
+ACTIVIDADES FÍSICAS Y DEPORTIVAS	LOGSE	AFD301	Animación de actividades físicas y deportivas
+ADMINISTRACIÓN Y GESTIÓN	LOE	ADG301	Administración y finanzas
+ADMINISTRACIÓN Y GESTIÓN	LOGSE	ADM302	Secretariado
+AGRARIA	LOGSE	ACA301	Gestión y Organización de Empresas Agropecuarias
+AGRARIA	LOE	AGA302	Gestión forestal y del medio natural
+ARTES GRÁFICAS	LOGSE	ARG301	Diseño y producción editorial
+COMERCIO Y MARKETING	LOE	COM301	Comercio Internacional
+COMERCIO Y MARKETING	LOGSE	COM302	Gestión comercial y marketing
+COMERCIO Y MARKETING	LOE	COM303	Transporte y logística
+EDIFICACIÓN Y OBRA CIVIL	LOE	EOC301	Proyectos de Edificación
+EDIFICACIÓN Y OBRA CIVIL	LOE	EOC302	Proyectos de Obra civil
+EDIFICACIÓN Y OBRA CIVIL	LOGSE	EOC303	Realización y planes de obra
+ELECTRICIDAD Y ELECTRÓNICA	LOE	ELE301	Mantenimiento electrónico
+ELECTRICIDAD Y ELECTRÓNICA	LOE	ELE302	Sistemas electrónicos y automatizados
+ELECTRICIDAD Y ELECTRÓNICA	LOE	ELE303	Automatización y robótica industrial
+ELECTRICIDAD Y ELECTRÓNICA	LOGSE	ELE303	Sistemas de regulación y control automáticos
+ELECTRICIDAD Y ELECTRÓNICA	LOE	ELE304	Sistemas de telecomunicaciones e informáticos
+ELECTRICIDAD Y ELECTRÓNICA	LOGSE	ELE304	Sistemas de Telecomunicaciones e Informáticos
+ENERGÍA Y AGUA	LOE	ENA301	Eficiencia Energética y Energía Solar Térmica
+ENERGÍA Y AGUA	LOE	ENA302	Energías Renovables
+FABRICACIÓN MECÁNICA	LOE	FME301	Construcciones Metálicas
+FABRICACIÓN MECÁNICA	LOE	FME302	Diseño en Fabricación Mecánica
+FABRICACIÓN MECÁNICA	LOE	FME304	Programación de la Producción en Fabricación Mecánica
+HOSTELERÍA Y TURISMO	LOE	HOT301	Agencias de viajes y gestión de eventos
+HOSTELERÍA Y TURISMO	LOE	HOT302	Gestión de Alojamientos Turísticos
+HOSTELERÍA Y TURISMO	LOE	HOT303	Guía, información y asistencia turísticas
+HOSTELERÍA Y TURISMO	LOE	HOT304	Dirección de Servicios de Restauración
+HOSTELERÍA Y TURISMO	LOE	HOT305	Dirección de cocina
+IMAGEN PERSONAL	LOGSE	IMP301	Asesoría de Imagen Personal
+IMAGEN PERSONAL	LOE	IMP302	Estética integral y bienestar
+IMAGEN Y SONIDO	LOE	IMS301	Iluminación, captación y tratamiento de la imagen
+IMAGEN Y SONIDO	LOE	IMS302	Producción de Audiovisuales y Espectáculos
+IMAGEN Y SONIDO	LOE	IMS303	Realización de proyectos audiovisuales y espectáculos
+IMAGEN Y SONIDO	LOE	IMS304	Sonido para audiovisuales y espectáculos
+INDUSTRIAS ALIMENTARIAS	LOE	INA301	Procesos y calidad en la industria alimentaria
+INDUSTRIAS ALIMENTARIAS	LOE	INA302	Vitivinicultura
+INFORMÁTICA Y COMUNICACIONES	LOE	IFC301	Administración de sistemas informáticos en red
+INFORMÁTICA Y COMUNICACIONES	LOE	IFC302	Desarrollo de Aplicaciones Multiplataforma
+INFORMÁTICA Y COMUNICACIONES	LOE	IFC303	Desarrollo de aplicaciones web
+INSTALACIÓN Y MANTENIMIENTO	LOE	IMA301	Mantenimiento de Instalaciones Térmicas y de Fluidos
+INSTALACIÓN Y MANTENIMIENTO	LOE	IMA302	Mecatrónica industrial
+INSTALACIÓN Y MANTENIMIENTO	LOGSE	MSP302	Mantenimiento de equipo industrial
+INSTALACIÓN Y MANTENIMIENTO	LOGSE	MSP304	Prevención de riesgos profesionales
+MADERA, MUEBLE Y CORCHO	LOE	MAM301	Diseño y amueblamiento
+QUÍMICA	LOE	QUI301	Laboratorio de análisis y de Control de calidad
+QUÍMICA	LOE	QUI304	Química Industrial
+QUÍMICA	LOGSE	QUI306	Química Ambiental
+SANIDAD	LOGSE	SAN301	Anatomía patológica y citología
+SANIDAD	LOGSE	SAN302	Dietética
+SANIDAD	LOGSE	SAN303	Documentación Sanitaria
+SANIDAD	LOGSE	SAN304	Higiene Bucodental
+SANIDAD	LOGSE	SAN305	Imagen para el Diagnóstico
+SANIDAD	LOGSE	SAN306	Laboratorio de diagnóstico clínico
+SANIDAD	LOE	SAN308	Prótesis Dentales
+SANIDAD	LOGSE	SAN309	Radioterapia
+SANIDAD	LOGSE	SAN310	Salud ambiental
+SERVICIOS SOCIOCULTURALES Y A LA COMUNIDAD	LOGSE	SSC301	Animación sociocultural
+SERVICIOS SOCIOCULTURALES Y A LA COMUNIDAD	LOE	SSC302	Educación Infantil
+SERVICIOS SOCIOCULTURALES Y A LA COMUNIDAD	LOGSE	SSC303	Integración Social
+SERVICIOS SOCIOCULTURALES Y A LA COMUNIDAD	LOGSE	SSC304	Interpretación de la Lengua de Signos
+TEXTIL, CONFECCIÓN Y PIEL	LOE	TCP301	Patronaje y Moda
+TRANSPORTE Y MANTENIMIENTO DE VEHÍCULOS	LOE	TMV301	Automoción
+TRANSPORTE Y MANTENIMIENTO DE VEHÍCULOS	LOGSE	MVA302	Mantenimiento aeromecánico

@@ -20,10 +20,10 @@ import java.sql.SQLException;
 
 public class Connection {
 
-    private static final String SERVER = "jdbc:mysql://fp2.croh1mygfad5.eu-west-3.rds.amazonaws.com/";
-    private static final String BD = "FactoriaSVP";
-    private static final String USER = "admin";
-    private static final String PSSWD = "FP2%SanAlberto";
+    private static final String SERVER = "jdbc:mysql://54.37.220.4:3306/";
+    private static final String BD = "pruebasFP2";
+    private static final String USER = "fpuser";
+    private static final String PSSWD = "FPuserp@ssw0rd";
 
     public static DataSource poolCon(){
         String URL = SERVER + BD;
@@ -36,15 +36,6 @@ public class Connection {
 
     }
 
-    public static java.sql.Connection handleDB() throws SQLException {
-        BasicDataSource conexionSGBD = new BasicDataSource();
-        conexionSGBD.setUrl(SERVER);
-        conexionSGBD.setUsername(USER);
-        conexionSGBD.setPassword(PSSWD);
-        conexionSGBD.setInitialSize(1);
-        java.sql.Connection con =  conexionSGBD.getConnection();
-        return con;
-    }
     public static java.sql.Connection conectar() throws SQLException{
         return poolCon().getConnection();
     }
