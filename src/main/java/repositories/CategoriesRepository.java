@@ -12,7 +12,7 @@ public class CategoriesRepository {
 
         //conectamos a la base de datos y preparamos las consultas de inserción y comprobación:
         try (java.sql.Connection con = DataBase.Connection.conectar()) {
-            PreparedStatement insCategory = con.prepareStatement("INSERT INTO CATEGORY (CatName) VALUES (?, ?)");
+            PreparedStatement insCategory = con.prepareStatement("INSERT INTO CATEGORY (CatName, ShortCat) VALUES (?, ?)");
             PreparedStatement checkCategory = con.prepareStatement("SELECT id FROM CATEGORY WHERE CatName LIKE ?");
 
             for (Category cat : newCategories) {
