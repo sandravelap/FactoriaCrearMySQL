@@ -23,10 +23,11 @@ public class HandleDB {
         String createTableProject="CREATE TABLE PROJECT (Id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, " +
                 "Title VARCHAR(50) NOT NULL UNIQUE, Logo BLOB, Web VARCHAR(100),ProjectDescription TEXT, " +
                 "State VARCHAR(20) NOT NULL CHECK(STATE IN('Pendiente','Completado','En Curso')), InitDate DATE, EndDate DATE);";
-        String createTableCategories="CREATE TABLE CATEGORY (Id INT NOT NULL AUTO_INCREMENT PRIMARY KEY," +
+        String createTableCategory="CREATE TABLE CATEGORY (Id INT NOT NULL AUTO_INCREMENT PRIMARY KEY," +
                 "CatName VARCHAR(70) UNIQUE, ShortCat VARCHAR(7))";
         String createTableInstitution="CREATE TABLE INSTITUTION (Id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, " +
-                "InstitutionName VARCHAR(70) NOT NULL, Category VARCHAR(70),ShortCat VARCHAR(7),InstitutionCode VARCHAR(20) UNIQUE, Web VARCHAR(100), Email VARCHAR(70))";
+                "InstitutionName VARCHAR(70) NOT NULL, IdCategory INT,InstitutionCode VARCHAR(20) UNIQUE, Web VARCHAR(100), " +
+                "Email VARCHAR(70), FOREIGN KEY (IdCategory) REFERENCES CATEGORY (Id))";
         String createTableUsers ="CREATE TABLE USERS (Id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, \n" +
                 "Login VARCHAR(50) UNIQUE NOT NULL, UserName VARCHAR(20), Surname VARCHAR(100), " +
                 "Email VARCHAR(70), LinkedIn VARCHAR(30), IdInstitution INT UNSIGNED NOT NULL,\n" +
@@ -52,7 +53,7 @@ public class HandleDB {
                 //stmt.execute("DROP TABLE IF EXISTS LIBRO");
                 stmt.execute(createTableFamily);
                 stmt.execute(createTableProject);
-                stmt.execute(createTableCategories);
+                stmt.execute(createTableCategory);
                 stmt.execute(createTableInstitution);
                 stmt.execute(createTableUsers);
                 stmt.execute(createTableTechnology);
@@ -70,6 +71,7 @@ public class HandleDB {
     public static void borrar() {
         String deleteTableFamily = "DROP TABLE IF EXISTS FAMILY";
         String deleteTableProject="DROP TABLE IF EXISTS PROJECT";
+        String deleteTableCategory = "DROP TABLE IF EXISTS CATEGORY";
         String deleteTableInstitution="DROP TABLE IF EXISTS INSTITUTION";
         String deleteTableUsers ="DROP TABLE IF EXISTS USERS";
         String deleteTableTechnology="DROP TABLE IF EXISTS TECHNOLOGY";
@@ -86,6 +88,7 @@ public class HandleDB {
                 stmt.execute(deleteTableTechnology);
                 stmt.execute(deleteTableUsers);
                 stmt.execute(deleteTableInstitution);
+                stmt.execute(deleteTableCategory);
                 stmt.execute(deleteTableProject);
                 stmt.execute(deleteTableFamily);
             }catch(SQLException e){

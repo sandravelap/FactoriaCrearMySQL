@@ -9,7 +9,7 @@ import jakarta.xml.bind.annotation.XmlType;
 public class Institution {
     private Integer id;
     private String name;
-    private Integer category;
+    private String category; //como viene en el csv
     private String code;
     private String web;
     private String email;
@@ -36,11 +36,11 @@ public class Institution {
     }
 
     @XmlElement(name="category")
-    public Integer getCategory() {
+    public String getCategory() {
         return category;
     }
 
-    public void setCategory(Integer category) {
+    public void setCategory(String category) {
         this.category = category;
     }
 

@@ -23,6 +23,10 @@ public class InsertCategories {
         categoriesList.add(cat6);
         Category cat7 = new Category("Centro Docente de Formación Militar","CDFM");
         categoriesList.add(cat7);
+        Category cat8 = new Category("Centro Privado Integrado de Formación Profesional", "CIFP");
+        categoriesList.add(cat8);
+        Category cat9 = new Category("Centro Privado de Formación Profesional", "CFP");
+        categoriesList.add(cat9);
         //pasamos el array al repositorio que hacer los insert
         CategoriesRepository.insertCategories(categoriesList);
     }

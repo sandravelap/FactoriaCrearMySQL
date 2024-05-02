@@ -11,17 +11,13 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class CsvInstitutionsToXml {
 
     public void csvTransform(Path pathCsv){
-        try (java.sql.Connection con = DataBase.Connection.conectar()){
-            PreparedStatement getCategory = con.prepareStatement("SELECT Id FROM CATEGORY WHERE CatName LIKE ?");
+        try {
             Institutions institutions = new Institutions();
             ArrayList<Institution> listaInstitutions = new ArrayList<Institution>();
             Institution auxInstitution = new Institution();
@@ -33,8 +29,9 @@ public class CsvInstitutionsToXml {
                 String[] csvArray = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
                 auxInstitution.setCode(csvArray[3].replace("\"","")); //
                 auxInstitution.setName(csvArray[4].replace("\"",""));
-                //si no existe la categoría se almacenará como 0
-                auxInstitution.setCategory(getIdCat(csvArray[5].replace("\"",""),getCategory));
+                //la categoría aquí es un String con el nombre completo, lo que hay en el csv
+                //al hacer el insert se convertirá en el id correspondiente
+                auxInstitution.setCategory(csvArray[5].replace("\"","").strip());
                 auxInstitution.setEmail(csvArray[9].replace("\"",""));
                 auxInstitution.setWeb(csvArray[10].replace("\"",""));
                 listaInstitutions.add(auxInstitution);
@@ -58,26 +55,9 @@ public class CsvInstitutionsToXml {
             throw new RuntimeException(e);
         } catch (JAXBException e) {
             throw new RuntimeException(e);
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
         }
 
     }
 
-    private Integer getIdCat(String categoryName, PreparedStatement getCategory) {
-        Integer idCat=0;
-        try {
 
-            getCategory.setString(1, categoryName);
-            ResultSet rs = getCategory.executeQuery();
-            if (rs.next()){
-                idCat = rs.getInt("Id");
-            }
-            rs.close();
-
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-        return idCat;
-    }
 }
