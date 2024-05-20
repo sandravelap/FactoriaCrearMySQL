@@ -29,4 +29,15 @@ public class FamiliesRepository {
             throw new RuntimeException(e);
         }
     }
+
+    public static void showFamilies() {
+        try (java.sql.Connection con = DataBase.Connection.conectar()) {
+            PreparedStatement showFamilies = con.prepareStatement("SELECT * FROM FAMILY");
+            ResultSet rs = showFamilies.executeQuery();
+            System.out.println(rs.getString("FamilyName"));
+            rs.close();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

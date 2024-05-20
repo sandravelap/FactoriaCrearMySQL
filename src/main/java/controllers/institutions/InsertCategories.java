@@ -2,7 +2,6 @@ package controllers.institutions;
 
 import Pojos.Category;
 import repositories.CategoriesRepository;
-import repositories.InstitutionsRepository;
 
 import java.util.ArrayList;
 

@@ -19,7 +19,7 @@ public class CsvInstitutionsToXml {
     public void csvTransform(Path pathCsv){
         try {
             Institutions institutions = new Institutions();
-            ArrayList<Institution> listaInstitutions = new ArrayList<Institution>();
+            ArrayList<Institution> listaInstitutions = new ArrayList<>();
             Institution auxInstitution = new Institution();
             List<String> csvLines = Files.readAllLines(pathCsv);
             //cogemos del csv los campos que nos interesan para el xml

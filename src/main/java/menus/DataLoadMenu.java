@@ -3,6 +3,7 @@ package menus;
 import controllers.families.InsertFamilies;
 import controllers.institutions.InsertCategories;
 import controllers.institutions.InsertInstitutions;
+import controllers.projects.InsertProjects;
 
 import static libs.Leer.pedirCadena;
 
@@ -11,6 +12,7 @@ public class DataLoadMenu {
     private InsertInstitutions insertInstitutions = new InsertInstitutions();
     private InsertFamilies insertFamilies = new InsertFamilies();
     private InsertCategories insertCategories = new InsertCategories();
+    private InsertProjects insertProjects = new InsertProjects();
 
     public void showMenu(){
         String option;
@@ -19,6 +21,7 @@ public class DataLoadMenu {
                     "1. Cargar categorías de instituciones. \n" +
                     "2. Cargar institutos con CFGM y/o CFGS. \n" +
                     "3. Cargar familias profesionales de FP. \n" +
+                    "4. Cargar proyectos de innovación de FP. \n" +
                     "0. Salir \n");
             option = this.askForOption();
             this.processOption(option);
@@ -34,6 +37,7 @@ public class DataLoadMenu {
             case "1" -> this.insertCategories.insertCategories();
             case "2" -> this.insertInstitutions.InsertInstitutions();
             case "3" -> this.insertFamilies.InsertFamilies();
+            case "4" -> this.insertProjects.InsertProjects();
             case "0" -> System.out.println("Volvemos al menú principal. ");
             default -> System.out.println("Opción incorrecta.");
         }

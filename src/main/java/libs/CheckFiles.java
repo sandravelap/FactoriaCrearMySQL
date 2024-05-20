@@ -5,7 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class CheckFiles {
-    public static boolean dirEscribible(Path p) {
+    public boolean dirEscribible(Path p) {
         //método que chequea si se puede escribir en un directorio y si no lo crea
         boolean dirOK = false;
         if (Files.exists(p) && Files.isDirectory(p)) {
@@ -42,7 +42,7 @@ public class CheckFiles {
         return ficheroOK;
     }
 
-    public static boolean ficheroEscribible(Path p) {
+    public boolean ficheroEscribible(Path p) {
     //método que comprueba si se puede escribir en un fichero y si no lo crea
         boolean ficheroOK = false;
         if (Files.exists(p)) {
